@@ -1,5 +1,5 @@
 
-public class OverRiding {
+public class Override {
 
 /*	class Thought {
 		public void message() {

@@ -1,5 +1,5 @@
 
-public class OverLoading {
+public class Overload {
 
 	
 	static void buy(int itemId, double amount){

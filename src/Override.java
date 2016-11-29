@@ -1,30 +1,30 @@
 
-public class Override {
 
-/*	class Thought {
+	class Thought {
 		public void message() {
 			System.out.println("I feel like I am diagonally parked in a parallel universe.");
 		}
 	}
-
-	public class Advice extends Thought {
-		@Override  // @Override annotation in Java 5 is optional but helpful.
+	class Advice1 extends Thought {
 		public void message() {
-			System.out.println("Warning: Dates in calendar are closer than they appear.");
+			 System.out.println("Warning: Dates in calendar are closer than they appear.");
 		}
 	}
-
-	Thought parking = new Thought();
-	parking.message();  // Prints "I feel like I am diagonally parked in a parallel universe."
-
-	Thought dates = new Advice();  // Polymorphism
-	dates.message();  // Prints "Warning: Dates in calendar are closer than they appear."
-	
-	public class Advice extends Thought {
-	      @Override
+	class Advice2 extends Thought {
 	      public void message() {
-	          System.out.println("Warning: Dates in calendar are closer than they appear.");
-	          super.message();  // Invoke parent's version of method.
-	      }*/
+	         System.out.println("Warning: Dates in calendar are far than they appear.");
+	         System.out.println("Invoke Parent's Version of Method");
+             super.message();  // Invoke parent's version of method.
+	      }
+	}
+	
+	public class Override{ 
+	public static void main(String arg[]){
+		
+	  		Thought parking = new Thought();
+	  	    parking.message();  // Prints "I feel like I am diagonally parked in a parallel universe."
 
-}
+	  		Thought dates = new Advice2();  // Polymorphism
+	  		dates.message();  // Prints "Warning: Dates in calendar are closer than they appear."
+	  		}
+     }

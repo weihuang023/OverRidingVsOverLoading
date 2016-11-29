@@ -12,8 +12,6 @@ public class Overload {
 	public static void main(String arg[]){
 		buy(1,100);
 		buy("item",3);
-
-		
 		//This is new message.
 	}
 }
